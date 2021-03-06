@@ -1,0 +1,16 @@
+import smtplib
+
+sender_email = "ezranouval@gmail.com"
+rec_email = "artaditya45@gmail.com"
+password = input(str('masukkan password: '))
+message = "haloooooo"
+
+server = smtplib.SMTP('smtp.gmail.com', 587)
+server.starttls()
+server.login(sender_email, password)
+print("Login success")
+server.sendmail(sender_email, rec_email, message)
+print("Email has been send to ", rec_email)
+
+#referensi dari https://www.youtube.com/watch?v=sXjpkcF7rPQ
+#2 penerima, subject, list
