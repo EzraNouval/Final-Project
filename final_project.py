@@ -13,4 +13,3 @@ server.sendmail(sender_email, rec_email, message)
 print("Email has been send to ", rec_email)
 
 #referensi dari https://www.youtube.com/watch?v=sXjpkcF7rPQ
-#2 penerima, subject, list
